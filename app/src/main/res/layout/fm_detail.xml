@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.detail.DetailFragment"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:id="@+id/comicsC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/comicT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="Comics"/>
+
+            <LinearLayout
+                android:id="@+id/comicsL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/comicT"
+                android:orientation="vertical"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/storiesC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comicsC">
+
+            <TextView
+                android:id="@+id/storiesT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="Stories"/>
+
+            <LinearLayout
+                android:id="@+id/storiesL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/storiesT"
+                android:orientation="vertical"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/eventsC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/storiesC">
+
+            <TextView
+                android:id="@+id/eventsT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="Events"/>
+
+            <LinearLayout
+                android:id="@+id/eventsL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eventsT"
+                android:orientation="vertical"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/seriesC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eventsC">
+
+            <TextView
+                android:id="@+id/seriesT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="Series"/>
+
+            <LinearLayout
+                android:id="@+id/seriesL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seriesT"
+                android:orientation="vertical"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
